@@ -10,7 +10,6 @@ export function TimelineSection() {
 
       <div className="container-custom">
         <SectionHeader
-          badge="Our Journey"
           title="28 Years of"
           titleHighlight="Milestones"
           description="From a boutique advisory in London to a globally respected financial institution. The story of Prudent Capital."

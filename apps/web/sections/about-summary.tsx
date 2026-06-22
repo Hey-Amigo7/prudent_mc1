@@ -35,11 +35,6 @@ export function AboutSummary() {
 
           {/* Content side */}
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-[#F07C00]/25 bg-[#F07C00]/8 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#F07C00] uppercase mb-6">
-              <span className="h-1 w-1 rounded-full bg-[#F07C00] animate-pulse" />
-              About Prudent Micro Credit
-            </span>
-
             <h2 className="font-display text-3xl font-bold text-slate-100 leading-tight sm:text-4xl mb-5">
               Built on{" "}
               <span className="text-gold-gradient">Trust &amp; Empowerment</span>

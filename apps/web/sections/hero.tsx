@@ -31,12 +31,6 @@ export function HeroSection() {
 
       <div className="relative z-10 container-custom pt-24 pb-20">
         <div className="max-w-3xl">
-          {/* Badge */}
-          <span className="inline-flex items-center gap-2 rounded-full border border-[#F07C00]/25 bg-[#F07C00]/8 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#F07C00] uppercase mb-7">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#F07C00] animate-pulse" />
-            Empowering Financial Growth
-          </span>
-
           {/* Headline */}
           <h1 className="font-display text-5xl font-bold leading-tight tracking-tight text-slate-50 sm:text-6xl lg:text-7xl mb-6">
             Finance That

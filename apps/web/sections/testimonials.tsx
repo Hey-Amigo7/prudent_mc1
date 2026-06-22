@@ -14,7 +14,6 @@ export function TestimonialsSection() {
 
       <div className="container-custom relative">
         <SectionHeader
-          badge="Client Testimonials"
           title="What Our Clients"
           titleHighlight="Say About Us"
           description="Hear from the executives and institutions who have trusted Prudent Capital with their most important financial decisions."

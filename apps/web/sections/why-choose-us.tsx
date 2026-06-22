@@ -27,7 +27,6 @@ export function WhyChooseUs() {
 
       <div className="container-custom">
         <SectionHeader
-          badge="Why Prudent Micro Credit"
           title="The Standard for"
           titleHighlight="Financial Excellence"
           description="Six pillars that distinguish Prudent Micro Credit and make us the preferred partner for accessible financial empowerment."

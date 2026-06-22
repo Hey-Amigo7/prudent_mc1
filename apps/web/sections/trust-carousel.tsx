@@ -11,7 +11,6 @@ export function TrustCarousel() {
 
       <div className="container-custom">
         <SectionHeader
-          badge="Our World"
           title="Happy Clients, Dedicated Staff,"
           titleHighlight="Exceptional Results"
           description="A glimpse into the Prudent Capital world: our people, our partnerships, and the culture that drives exceptional outcomes."

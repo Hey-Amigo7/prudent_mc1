@@ -24,11 +24,6 @@ export function NewsletterCTA() {
 
       <div className="container-custom relative">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/15 px-4 py-1.5 text-xs font-semibold tracking-widest text-white uppercase mb-6">
-            <span className="h-1 w-1 rounded-full bg-white animate-pulse" />
-            Market Intelligence
-          </span>
-
           <h2 className="font-display text-3xl font-bold text-white sm:text-4xl mb-4">
             Stay Ahead of the Markets
           </h2>

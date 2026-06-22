@@ -37,7 +37,6 @@ export function ServicesProcess() {
         {/* Interest Rates */}
         <div>
           <SectionHeader
-            badge="Rates"
             title="Interest"
             titleHighlight="Rates"
             description="Simple, transparent rates across all three loan products."

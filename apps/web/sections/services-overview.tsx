@@ -25,7 +25,6 @@ export function ServicesOverview() {
 
       <div className="container-custom relative">
         <SectionHeader
-          badge="Our Products"
           title="Accessible Financial"
           titleHighlight="Solutions"
           description="Three loan products built around your needs — flexible repayment, transparent rates, and dedicated support."

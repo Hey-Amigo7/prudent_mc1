@@ -16,7 +16,6 @@ export function FAQSection() {
 
       <div className="container-custom">
         <SectionHeader
-          badge="FAQ"
           title="Frequently Asked"
           titleHighlight="Questions"
           description="Answers to the most common questions about our firm, our services, and our approach to client partnerships."
