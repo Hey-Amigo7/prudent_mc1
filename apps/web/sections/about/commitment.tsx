@@ -46,7 +46,6 @@ export function CommitmentSection() {
 
       <div className="container-custom relative">
         <SectionHeader
-          badge="Our Commitment"
           title="Who We"
           titleHighlight="Serve"
           description="Prudent Micro Credit exists to create financial opportunity for those who need it most. We are dedicated to four pillars of service, each rooted in our mission of accessible empowerment."

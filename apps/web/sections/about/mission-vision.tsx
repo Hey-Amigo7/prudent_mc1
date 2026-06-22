@@ -1,6 +1,6 @@
 "use client";
 
-import { Target, Eye, Sparkles } from "lucide-react";
+import { Target, Eye } from "lucide-react";
 
 const PILLARS = [
   { label: "Professionalism", desc: "Highest standards in every interaction" },
@@ -13,14 +13,6 @@ export function MissionVision() {
   return (
     <section className="section-padding bg-[#0C0A08]">
       <div className="container-custom">
-
-        {/* Section label */}
-        <div className="text-center mb-12">
-          <span className="inline-flex items-center gap-2 rounded-full border border-[#F07C00]/25 bg-[#F07C00]/8 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#F07C00] uppercase">
-            <Sparkles className="h-3 w-3" />
-            Mission, Vision &amp; Values
-          </span>
-        </div>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Mission */}
@@ -35,12 +27,6 @@ export function MissionVision() {
               <p className="text-slate-400 leading-relaxed text-base">
                 Prudent Micro Credit is a results-oriented microcredit institution committed to empowering individuals and businesses through accessible financial solutions. We create value by fostering professionalism, teamwork, innovation, resourcefulness, and ethical business practices in everything we do.
               </p>
-              <div className="mt-8 rounded-xl bg-[#F07C00]/5 border border-[#F07C00]/10 p-5">
-                <p className="text-sm text-[#F07C00] font-semibold italic">
-                  &ldquo;Accessible finance. Real impact. Lasting relationships.&rdquo;
-                </p>
-                <p className="text-xs text-slate-500 mt-1">Prudent Micro Credit</p>
-              </div>
             </div>
           </div>
 
@@ -56,12 +42,6 @@ export function MissionVision() {
               <p className="text-slate-400 leading-relaxed text-base">
                 To be the preferred microcredit institution, recognized for excellence, trust, and value creation in the eyes of our customers and communities.
               </p>
-              <div className="mt-8 rounded-xl bg-emerald-500/5 border border-emerald-500/10 p-5">
-                <p className="text-sm text-emerald-400 font-semibold italic">
-                  &ldquo;The preferred partner for financial empowerment and community growth.&rdquo;
-                </p>
-                <p className="text-xs text-slate-500 mt-1">Prudent Micro Credit</p>
-              </div>
             </div>
           </div>
         </div>

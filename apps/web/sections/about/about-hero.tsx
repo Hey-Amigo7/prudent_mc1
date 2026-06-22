@@ -18,11 +18,6 @@ export function AboutHero() {
 
       <div className="container-custom relative z-10">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-[#F07C00]/25 bg-[#F07C00]/8 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#F07C00] uppercase mb-6">
-            <span className="h-1 w-1 rounded-full bg-[#F07C00] animate-pulse" />
-            Who We Are
-          </span>
-
           <h1 className="font-display text-4xl font-bold text-slate-100 sm:text-5xl lg:text-6xl mb-6 leading-tight">
             Empowering Lives Through{" "}
             <span className="text-gold-gradient">Accessible Finance</span>

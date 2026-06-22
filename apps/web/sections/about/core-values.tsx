@@ -18,7 +18,6 @@ export function CoreValuesSection() {
 
       <div className="container-custom">
         <SectionHeader
-          badge="What We Stand For"
           title="Our Core"
           titleHighlight="Values"
           description="Four principles that guide every decision, every client interaction, and every financial solution we deliver at Prudent Micro Credit."
