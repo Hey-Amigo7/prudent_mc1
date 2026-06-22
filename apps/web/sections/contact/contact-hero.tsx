@@ -1,10 +1,22 @@
 "use client";
 
+import Image from "next/image";
+
 export function ContactHero() {
   return (
     <section data-image-bg className="relative pt-32 pb-16 overflow-hidden">
+      {/* Background image — same treatment as about/services heroes */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[#0C0A08]" />
+        <Image
+          src="https://images.unsplash.com/photo-1521737604082-7649a2cd2b20?w=1920&q=80&auto=format&fit=crop"
+          alt=""
+          aria-hidden="true"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0C0A08]/70 via-[#0C0A08]/85 to-[#0C0A08]" />
         <div className="absolute inset-0 grid-bg opacity-40" />
       </div>
 
