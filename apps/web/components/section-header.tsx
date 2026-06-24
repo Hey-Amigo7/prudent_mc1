@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 
 interface SectionHeaderProps {
-  badge?: string;
   title: string;
   titleHighlight?: string;
   description?: string;
@@ -12,7 +11,6 @@ interface SectionHeaderProps {
 }
 
 export function SectionHeader({
-  badge,
   title,
   titleHighlight,
   description,
