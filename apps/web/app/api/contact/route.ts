@@ -35,6 +35,13 @@ function isValidEmail(s: string): boolean {
   return s.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
 }
 
+function parseRecipientEmails(value?: string): string[] {
+  return (value ?? "info@prudentmicrocredit.com")
+    .split(",")
+    .map((email) => email.trim())
+    .filter((email) => email.length > 0 && isValidEmail(email));
+}
+
 export async function POST(req: NextRequest) {
   const ip =
     req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
@@ -123,10 +130,22 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const toEmail =
-    process.env.CONTACT_TO_EMAIL ?? "info@prudentmicrocredit.com";
+  const toEmails = parseRecipientEmails(
+    process.env.CONTACT_TO_EMAILS ?? process.env.CONTACT_TO_EMAIL
+  );
   const fromEmail =
     process.env.CONTACT_FROM_EMAIL ?? "noreply@prudentmicrocredit.com";
+
+  if (toEmails.length === 0) {
+    console.error("No valid contact recipient emails configured.");
+    return NextResponse.json(
+      {
+        error:
+          "Email service not configured. Please contact us directly at info@prudentmicrocredit.com.",
+      },
+      { status: 500 }
+    );
+  }
 
   const safeMessage = data.message
     .replace(/&/g, "&amp;")
@@ -195,9 +214,9 @@ export async function POST(req: NextRequest) {
       },
       body: JSON.stringify({
         from: `Prudent Micro Credit <${fromEmail}>`,
-        to: [toEmail],
+        to: toEmails,
         reply_to: data.email,
-        subject: `[PMC Inquiry] ${data.inquiryType} — ${data.firstName} ${data.lastName}`,
+        subject: `[PMC Inquiry] ${data.inquiryType} - ${data.firstName} ${data.lastName}`,
         html: emailHtml,
       }),
     });
