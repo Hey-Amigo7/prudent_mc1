@@ -22,11 +22,11 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: "Prudent Micro Credit | Empowering Financial Growth",
+    default: "Prudent Micro Credit Ghana | Loans, Savings & Financial Services",
     template: "%s | Prudent Micro Credit",
   },
   description:
-    "Prudent Micro Credit is a results-oriented microcredit institution committed to empowering individuals and businesses through accessible financial solutions.",
+    "Prudent Micro Credit provides loans, savings solutions, and financial services for individuals and businesses in Ghana.",
   keywords: [
     "microcredit",
     "micro loans",
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://prudentmicrocredit.com",
     siteName: "Prudent Micro Credit",
-    title: "Prudent Micro Credit | Empowering Financial Growth",
+    title: "Prudent Micro Credit Ghana | Loans, Savings & Financial Services",
     description:
-      "Accessible financial solutions for small businesses, entrepreneurs, salary earners, and asset financing. Trust, excellence, and value creation.",
+      "Prudent Micro Credit provides loans, savings solutions, and financial services for individuals and businesses in Ghana.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1486406307-12bfb3a2f5e8?w=1200&q=80&auto=format&fit=crop",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prudent Micro Credit | Empowering Financial Growth",
+    title: "Prudent Micro Credit Ghana | Loans, Savings & Financial Services",
     description:
-      "Accessible microcredit solutions for individuals and businesses.",
+      "Prudent Micro Credit provides loans, savings solutions, and financial services for individuals and businesses in Ghana.",
   },
   robots: {
     index: true,
@@ -94,4 +94,3 @@ export default function RootLayout({
     </html>
   );
 }
-
