@@ -40,6 +40,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Prudent Micro Credit" }],
   creator: "Prudent Micro Credit",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
