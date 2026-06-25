@@ -133,8 +133,8 @@ export async function POST(req: NextRequest) {
   const toEmails = parseRecipientEmails(
     process.env.CONTACT_TO_EMAILS ?? process.env.CONTACT_TO_EMAIL
   );
-  const fromEmail =
-    process.env.CONTACT_FROM_EMAIL ?? "noreply@prudentmicrocredit.com";
+  const configuredFromEmail = (process.env.CONTACT_FROM_EMAIL || "").trim();
+  const fromEmail = configuredFromEmail || "onboarding@resend.dev";
 
   if (toEmails.length === 0) {
     console.error("No valid contact recipient emails configured.");
@@ -222,11 +222,11 @@ export async function POST(req: NextRequest) {
     });
 
     if (!response.ok) {
-      console.error("Resend API error:", await response.text());
+      const errorBody = await response.text();
+      console.error("Resend API error:", errorBody);
       return NextResponse.json(
         {
-          error:
-            "Failed to send message. Please try again or contact us directly at info@prudentmicrocredit.com.",
+          error: `Email provider rejected the message. ${errorBody}`,
         },
         { status: 500 }
       );
