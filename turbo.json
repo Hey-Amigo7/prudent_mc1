@@ -1,6 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
+  "globalEnv": ["RESEND_API_KEY", "CONTACT_TO_EMAILS", "CONTACT_FROM_EMAIL"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
