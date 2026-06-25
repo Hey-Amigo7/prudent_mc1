@@ -134,7 +134,7 @@ export async function POST(req: NextRequest) {
     process.env.CONTACT_TO_EMAILS ?? process.env.CONTACT_TO_EMAIL
   );
   const configuredFromEmail = (process.env.CONTACT_FROM_EMAIL || "").trim();
-  const fromEmail = configuredFromEmail || "onboarding@resend.dev";
+  const fromEmail = configuredFromEmail || "info@prudentmicrocredit.com";
 
   if (toEmails.length === 0) {
     console.error("No valid contact recipient emails configured.");
